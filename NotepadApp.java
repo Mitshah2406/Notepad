@@ -425,38 +425,47 @@ class NotepadApp extends JFrame implements ActionListener {
             case "10":
 
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 10));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 10));
                 break;
             case "12":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 12));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 12));
 
                 break;
 
             case "14":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 14));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 14));
 
                 break;
             case "16":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 16));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 16));
 
                 break;
             case "18":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 18));
+            lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 18));
 
                 break;
             case "20":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 20));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 20));
 
                 break;
             case "22":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 22));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 22));
 
                 break;
             case "24":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 24));
+            lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 24));
 
                 break;
             case "26":
                 t.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 26));
+                lines.setFont(new Font(t.getFont().getFamily(), Font.PLAIN, 26));
 
                 break;
             case "B":
@@ -465,15 +474,19 @@ class NotepadApp extends JFrame implements ActionListener {
                 // System.out.println("Get style");
                 // System.out.println(old.getStyle());
                 t.setFont(new Font(old.getFamily(), old.getStyle() == 2 ? Font.BOLD+Font.ITALIC : Font.BOLD, old.getSize()));
+                lines.setFont(new Font(old.getFamily(), old.getStyle() == 2 ? Font.BOLD+Font.ITALIC : Font.BOLD, old.getSize()));
 
                 break;
             case "I":
-                t.setFont(new Font(t.getFont().getFamily(), 
-                        t.getFont().getStyle() == 1 ? Font.ITALIC + Font.BOLD : Font.ITALIC, t.getFont().getSize()));
+                t.setFont(new Font(t.getFont().getFamily(), t.getFont().getStyle() == 1 ? Font.ITALIC + Font.BOLD : Font.ITALIC, t.getFont().getSize()));
+                lines.setFont(new Font(t.getFont().getFamily(), t.getFont().getStyle() == 1 ? Font.ITALIC + Font.BOLD : Font.ITALIC, t.getFont().getSize()));
 
                 break;
                 case "Times New Roman":
                     t.setFont(new Font("Times New Roman",
+                            Font.PLAIN,
+                            t.getFont().getSize()));
+                    lines.setFont(new Font("Times New Roman",
                             Font.PLAIN,
                             t.getFont().getSize()));
 break;
@@ -481,14 +494,20 @@ break;
                     t.setFont(new Font("Calibri",
                             Font.PLAIN,
                             t.getFont().getSize()));
+                    lines.setFont(new Font("Calibri",
+                            Font.PLAIN,
+                            t.getFont().getSize()));
 break;
                 case "JetBrains Mono":
                     t.setFont(new Font("JetBrains Mono",
                             Font.PLAIN,
                             t.getFont().getSize()));
+                    lines.setFont(new Font("JetBrains Mono",
+                            Font.PLAIN,
+                            t.getFont().getSize()));
 break;
                 case "Courier":
-                    t.setFont(new Font("Courier",
+                    lines.setFont(new Font("Courier",
                             Font.PLAIN,
                             t.getFont().getSize()));
 break;
